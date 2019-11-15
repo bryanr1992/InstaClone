@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 import AlamofireImage
+import Alamofire
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     
@@ -20,8 +21,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
-        self.tableView.reloadData()
+        DataRequest.addAcceptableImageContentTypes(["application/octet-stream"])
 
         // Do any additional setup after loading the view.
     }
@@ -37,6 +37,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             if posts != nil {
                 self.posts = posts!
                 self.tableView.reloadData()
+                print("success")
             }
         }
     }
@@ -53,7 +54,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let user = post["Author"] as! PFUser
         cell.userLabel.text = user.username
         
-        cell.captionLabel.text = post["caption"] as? String
+        cell.captionLabel.text = post["caption"] as! String
         
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!
