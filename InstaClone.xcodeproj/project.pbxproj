@@ -16,6 +16,7 @@
 		59D5604F2377A29B00E6A971 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5604E2377A29B00E6A971 /* LoginViewController.swift */; };
 		59D560512377A2A900E6A971 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D560502377A2A900E6A971 /* FeedViewController.swift */; };
 		59D560532377AFEC00E6A971 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D560522377AFEC00E6A971 /* CameraViewController.swift */; };
+		59EBD0AE2377C608004CD6AB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EBD0AD2377C608004CD6AB /* PostCell.swift */; };
 		CD6809B591637309D606DBCF /* Pods_InstaClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441DA8E7E11E29F61212BCE7 /* Pods_InstaClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		59D5604E2377A29B00E6A971 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		59D560502377A2A900E6A971 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		59D560522377AFEC00E6A971 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		59EBD0AD2377C608004CD6AB /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		84C99160DF6C7DA0F697AF7D /* Pods-InstaClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClone.release.xcconfig"; path = "Target Support Files/Pods-InstaClone/Pods-InstaClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				59D5604E2377A29B00E6A971 /* LoginViewController.swift */,
 				59D560502377A2A900E6A971 /* FeedViewController.swift */,
 				59D560522377AFEC00E6A971 /* CameraViewController.swift */,
+				59EBD0AD2377C608004CD6AB /* PostCell.swift */,
 			);
 			path = InstaClone;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59EBD0AE2377C608004CD6AB /* PostCell.swift in Sources */,
 				59D5604F2377A29B00E6A971 /* LoginViewController.swift in Sources */,
 				59D5603F2377904000E6A971 /* ViewController.swift in Sources */,
 				59D560512377A2A900E6A971 /* FeedViewController.swift in Sources */,
