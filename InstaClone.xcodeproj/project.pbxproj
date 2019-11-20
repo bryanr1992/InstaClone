@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592145882384C96200E1120A /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592145872384C96200E1120A /* CommentCell.swift */; };
 		59D5603B2377904000E6A971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5603A2377904000E6A971 /* AppDelegate.swift */; };
 		59D5603D2377904000E6A971 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5603C2377904000E6A971 /* SceneDelegate.swift */; };
 		59D5603F2377904000E6A971 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5603E2377904000E6A971 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		122E4B37E50C92F97232ED11 /* Pods-InstaClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClone.debug.xcconfig"; path = "Target Support Files/Pods-InstaClone/Pods-InstaClone.debug.xcconfig"; sourceTree = "<group>"; };
 		441DA8E7E11E29F61212BCE7 /* Pods_InstaClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		592145872384C96200E1120A /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		59D560372377904000E6A971 /* InstaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D5603A2377904000E6A971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59D5603C2377904000E6A971 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				59D560502377A2A900E6A971 /* FeedViewController.swift */,
 				59D560522377AFEC00E6A971 /* CameraViewController.swift */,
 				59EBD0AD2377C608004CD6AB /* PostCell.swift */,
+				592145872384C96200E1120A /* CommentCell.swift */,
 			);
 			path = InstaClone;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				59D5603B2377904000E6A971 /* AppDelegate.swift in Sources */,
 				59D5603D2377904000E6A971 /* SceneDelegate.swift in Sources */,
 				59D560532377AFEC00E6A971 /* CameraViewController.swift in Sources */,
+				592145882384C96200E1120A /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
