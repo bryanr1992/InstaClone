@@ -30,7 +30,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "Posts")
-        query.includeKey("Author")
+        query.includeKeys(["Author","comments","comments.author"])
         query.limit = 20
         
         query.findObjectsInBackground { (posts, error) in
@@ -67,7 +67,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let user = post["Author"] as! PFUser
             cell.userLabel.text = user.username
             
-            cell.captionLabel.text = post["caption"] as! String
+            cell.captionLabel.text = post["caption"] as? String
             
             let imageFile = post["image"] as! PFFileObject
             let urlString = imageFile.url!
@@ -78,6 +78,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
+            
+            let comment = comments[indexPath.row - 1]
+            cell.commentLabel.text = comment["text"] as! String
+            
+            let user = comment["author"] as! PFUser
+            cell.nameLabel.text = user.username
             return cell
             
         }
@@ -87,7 +93,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let post = posts[indexPath.row]
         
-        let comment = PFObject(className: "Comments")
+        let comment = PFObject(className: "comments")
         comment["text"] = "This is a random comment"
         comment["post"] = post
         comment["author"] = PFUser.current()!
