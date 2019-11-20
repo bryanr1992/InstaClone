@@ -38,7 +38,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.posts = posts!
                 self.tableView.reloadData()
                 print("success")
-                print("Asshole")
             }
         }
     }
@@ -64,6 +63,26 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.photoView.af_setImage(withURL: url)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let post = posts[indexPath.row]
+        
+        let comment = PFObject(className: "Comments")
+        comment["text"] = "This is a random comment"
+        comment["post"] = post
+        comment["author"] = PFUser.current()!
+        
+        post.add(comment, forKey: "comments")
+        
+        post.saveInBackground { (success, error) in
+            if success {
+                print("comment saved")
+            }
+            else {
+                print("error saving comment")
+            }
+        }
     }
     
 
