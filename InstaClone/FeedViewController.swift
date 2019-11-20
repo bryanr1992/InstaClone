@@ -38,6 +38,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.posts = posts!
                 self.tableView.reloadData()
                 print("success")
+                print("Asshole")
             }
         }
     }
