@@ -154,7 +154,7 @@
                                             <outlet property="userLabel" destination="jrI-ta-n9l" id="apH-nY-JUt"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="kQc-Gl-INV" customClass="CommentCell" customModule="InstaClone" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentCell" id="kQc-Gl-INV" customClass="CommentCell" customModule="InstaClone" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="469" width="375" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kQc-Gl-INV" id="5y2-ma-U1e">
@@ -189,6 +189,28 @@
                                             <outlet property="commentLabel" destination="881-4C-vFy" id="pto-ru-tLP"/>
                                             <outlet property="nameLabel" destination="3nx-8B-i9Z" id="PiC-Iq-8cq"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddComentCell" id="yWe-Ro-rqa">
+                                        <rect key="frame" x="0.0" y="506.5" width="375" height="37"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yWe-Ro-rqa" id="47K-Tn-GJG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsg-of-awU">
+                                                    <rect key="frame" x="16" y="8" width="351" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.60534977791878175" green="0.60534977791878175" blue="0.60534977791878175" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tsg-of-awU" secondAttribute="bottom" constant="8" id="WJC-uN-w4A"/>
+                                                <constraint firstItem="tsg-of-awU" firstAttribute="top" secondItem="47K-Tn-GJG" secondAttribute="top" constant="8" id="tSv-iX-TvH"/>
+                                                <constraint firstItem="tsg-of-awU" firstAttribute="leading" secondItem="47K-Tn-GJG" secondAttribute="leading" constant="16" id="tuF-GE-GgE"/>
+                                                <constraint firstAttribute="trailing" secondItem="tsg-of-awU" secondAttribute="trailing" constant="8" id="uRM-cb-Ohv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
